@@ -1,0 +1,19 @@
+<%- include('header') %>
+
+<form action="/edytuj/<%= id %>" method="post">
+    
+    <p>
+        Title: <br/>
+        <input type="text" name="tytul" value="<%= tytul %>" />
+    </p>
+    <p>
+        Description: <br/>
+        <textarea name="opis"><%= opis %></textarea>
+    </p>
+    <p>
+        <button type="submit">Save the changed post</button>
+    </p>
+
+</form>
+
+<%- include('footer') %>

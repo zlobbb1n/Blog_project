@@ -1,0 +1,22 @@
+<%- include('header') %>
+    
+    
+<h2>Form for adding a new blog entry</h2>
+
+<form action="/dodaj" method="post">
+    
+    <p>
+        Title: <br/>
+        <input type="text" name="tytul" />
+    </p>
+    <p>
+        Description: <br/>
+        <textarea name="opis"></textarea>
+    </p>
+    <p>
+        <button type="submit">Save a new post</button>
+    </p>
+
+</form>
+
+<%- include('footer') %>

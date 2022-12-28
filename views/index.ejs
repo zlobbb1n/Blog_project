@@ -1,0 +1,21 @@
+
+<%- include('header') %>
+
+<ul>
+    <% dane.forEach((v,i) => { %>
+
+        <li>
+            <b><%= v.tytul %></b>
+            <p>
+                <%= v.opis %>
+                <br/>
+                <a href="/usun/<%= i %>">delete</a>
+                <a href="/edytuj/<%= i %>">edit</a>
+            </p>
+        </li>
+
+   <% }) %>
+   
+</ul>
+
+<%- include('footer') %>
